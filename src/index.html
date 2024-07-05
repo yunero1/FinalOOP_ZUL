@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Food Recipe</h1>
+    </header>
+    <main>
+        <!-- Recipe Banner kat homepage -->
+        <section class="promo-banner">
+            <div class="promo-text">
+                <h2>NO IDEA</h2>
+                <h1>WHAT TO COOK?</h1>
+                <p>FIND YOUR RECIPE HERE</p>
+            </div>
+            <div class="promo-images" id="promoImages">
+                <img src="C:\Users\Onyx\Desktop\luz\zul\image\burger.jfif" alt="Burger">
+                <img src="C:\Users\Onyx\Desktop\luz\zul\image\nasi lemak.jfif" alt="Nasi Lemak">
+                <img src="C:\Users\Onyx\Desktop\luz\zul\image\steak.jfif" alt="Steak">
+                <img src="C:\Users\Onyx\Desktop\luz\zul\image\mee.jpg" alt="Mee">
+                <img src="C:\Users\Onyx\Desktop\luz\zul\image\sayur.jpg" alt="Sayur">
+                <img src="C:\Users\Onyx\Desktop\luz\zul\image\pasta.jfif" alt="Pasta">
+                <img src="C:\Users\Onyx\Desktop\luz\zul\image\dessert.jfif" alt="Dessert">
+            </div>
+        </section>
+        
+        
+
+        <input type="text" id="search" placeholder="Search for a recipe...">
+        <button id="searchBtn">Search</button>
+        <p>Category</p> <!-- label Category at here-->
+        <div id="categoryButtons">
+            <button class="categoryBtn" data-category="Seafood">Seafood</button>
+            <button class="categoryBtn" data-category="Vegetarian">Vegetarian</button>
+            <button class="categoryBtn" data-category="Dessert">Dessert</button>
+            <button class="categoryBtn" data-category="Beef">Beef</button>
+            <button class="categoryBtn" data-category="Chicken">Chicken</button>
+            <button class="categoryBtn" data-category="Pasta">Pasta</button>
+            <button class="categoryBtn" data-category="Breakfast">Breakfast</button>
+            <button class="categoryBtn" data-category="Lamb">Lamb</button>
+        </div>
+        <div id="recipeContainer"></div>
+        <a href="favorites.html">Go to Favorites</a>
+    </main>
+    <script src="renderer.js"></script>
+</body>
+</html>

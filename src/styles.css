@@ -1,0 +1,216 @@
+/* General styles for your site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #e6e6e6;
+}
+
+header {
+    background-color: #1e74c4;     
+    color: white;
+    padding: 1px;
+    text-align: center;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#recipeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between recipe cards */
+    margin-top: 2px;
+}
+
+.recipe {
+    border: 1px solid #070707;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #c0c0da;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Set the width for the recipe container */
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: calc(50% - 22px);
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+} 
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px; /* Adjust padding to make the button smaller */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size for the button text */
+}
+
+button:hover {
+    background-color: #80d192;
+}
+
+#categoryButtons {
+    margin: 20px 0;
+}
+
+.categoryBtn {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.categoryBtn:hover {
+    background-color: #0056b3;
+}
+
+.recipe-image {
+    width: 100%; /* Ensure the image fills the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between image and other recipe details */
+}
+
+/* Recipe detail styling */
+.recipe-detail-container {
+    display: flex;
+    gap: 20px; /* Space between image and details */
+    background-color: rgb(255, 255, 255); /* Set background color to white */
+    padding: 20px; /* Add padding inside the container */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #070707;
+}
+
+.recipe-detail-image {
+    max-width: 300px; /* Set a max width for the image */
+    width: 100%; /* Ensure the image fills the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.recipe-detail-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recipe-detail-instructions {
+    margin-bottom: 20px;
+}
+
+/* Favorite recipes container styling */
+#favoritesContainer {
+    border: 1px solid #070707;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.favorite-recipe {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox to align image and text */
+    gap: 20px; /* Space between image and text */
+}
+
+.favorite-recipe h2 {
+    margin-top: 0;
+}
+
+.favorite-image {
+    max-width: 400px; /* Set a max width for the image */
+    width: 100%; /* Ensure the image fills the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between image and other details */
+}
+
+.favorite-recipe-text {
+    flex: 1; /* Allow text to take up remaining space */
+}
+
+.instructions {
+    list-style-type: disc; /* Set list style */
+    margin-left: 20px; /* Add left margin to indent the list */
+    padding-left: 20px; /* Add padding for better spacing */
+}
+
+.instructions li {
+    margin-bottom: 5px; /* Space between list items */
+}
+
+/* Back to search link styling */
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Promotional Banner Styles */
+.promo-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    background-color: #9bceca;
+    border-radius: 8px;
+    margin-bottom: 2em;
+}
+
+.promo-text {
+    max-width: 50%;
+}
+
+.promo-title {
+    color: rgb(153, 174, 177);
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.promo-text h2 {
+    font-size: 2em;
+    margin: 0.2em 0;
+}
+
+.promo-text h1 {
+    font-size: 2.5em;
+    color: #f1ff27;
+    margin: 0.2em 0;
+}
+
+.promo-images {
+    display: flex;
+    gap: 1em;
+}
+
+.promo-images img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
